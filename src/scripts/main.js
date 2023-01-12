@@ -1,4 +1,6 @@
 import { createPlan } from "./plan.js";
+import { addPlant } from "./field.js";
+import { usePlants } from "./field.js";
 
 console.log("Welcome to the main module")
 
@@ -8,7 +10,15 @@ for (const plan of yearlyPlan) {
     console.log(plan)
 }
 
-// import { createAsparagus } from "./seeds/asparagus.js"
+import { createCorn } from "./seeds/corn.js"
 
-// const asparagusSeed = createAsparagus()
-// console.log(asparagusSeed)
+const cornSeed = createCorn()
+
+console.log(Array.isArray(cornSeed))
+
+addPlant(cornSeed)
+
+const plantTest = usePlants()
+
+console.log(plantTest)
+
