@@ -1,6 +1,7 @@
 import { usePlants } from "./field.js";
 import { createPlan } from "./plan.js";
 import { plantSeeds } from "./tractor.js";
+import { harvestPlants } from "./harvester.js";
 
 console.log("Welcome to the main module")
 
@@ -24,4 +25,4 @@ for (const plan of yearlyPlan) {
 //console.log(usePlants(addPlant(createCorn())))
 
 plantSeeds(yearlyPlan)
-console.log(usePlants())
+console.log(harvestPlants(usePlants()))
