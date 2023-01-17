@@ -27,6 +27,8 @@ for (const plan of yearlyPlan) {
 
 plantSeeds(yearlyPlan)
 
+console.log(usePlants())
+
 // console.log(harvestPlants(usePlants()))
 
 console.log(harvestedFoods(harvestPlants(usePlants())))
